@@ -11,7 +11,6 @@ import java.util.List;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import java.lang.*;
 
 public class TestIterator {
 
@@ -99,6 +98,8 @@ public class TestIterator {
     // (defined as the sum of the items divided by the number of items)
     //final Iterator<Integer> i = list.iterator();
     //while (i.hasNext()) {
+      //n+=1;
+      //sum = list.get(i) + sum;
     //}
     // testNonempty shows how to use an iterator; use i.hasNext() in the while loop condition
     assertEquals(61.3, sum / n, 0.1);
