@@ -5,7 +5,9 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+import java.util.LinkedList;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import org.junit.After;
@@ -78,9 +80,10 @@ public class TestIterator {
       }
     }
     // TODO using assertEquals and Arrays.asList, express which values are left in the list
+    assertEquals(Arrays.asList(33, 44, 55, 66), list);
     // See TestList.java for examples of how to use Arrays.asList; also see the Java Arrays
     // class for more information
-    fail("Not yet implemented"); // remove this line when done
+    //fail("Not yet implemented"); // remove this line when done
   }
 
   @Test
@@ -96,13 +99,13 @@ public class TestIterator {
     int n = 0;
     // TODO use an iterator and a while loop to compute the average (mean) of the values
     // (defined as the sum of the items divided by the number of items)
-    //final Iterator<Integer> i = list.iterator();
-    //while (i.hasNext()) {
-      //n+=1;
-      //sum = list.get(i) + sum;
-    //}
+    final Iterator<Integer> i = list.iterator();
+    while (i.hasNext()) {
+      sum += i.next();
+      n+=1;
+    }
     // testNonempty shows how to use an iterator; use i.hasNext() in the while loop condition
-    assertEquals(61.3, sum / n, 0.1);
+    assertEquals(61.28, sum / n, 0.1);
     assertEquals(7, n);
   }
 }
