@@ -22,6 +22,7 @@ public class TestIterator {
   @Before
   public void setUp() throws Exception {
     list = new ArrayList<Integer>();
+    //list = new LinkedList<Integer>();
     // TODO also try with a LinkedList - does it make any difference behaviorally? (ignore performance)
   }
 

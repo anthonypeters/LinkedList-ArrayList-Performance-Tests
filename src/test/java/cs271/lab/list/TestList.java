@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,6 +19,7 @@ public class TestList {
   @Before
   public void setUp() throws Exception {
     list = new ArrayList<Integer>();
+    //list = new LinkedList<Integer>();
     // TODO also try with a LinkedList - does it make any difference behaviorally? (ignore performance)
   }
 
