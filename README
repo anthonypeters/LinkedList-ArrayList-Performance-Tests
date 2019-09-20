@@ -1,0 +1,24 @@
+#TestIterator
+1) TODO also try with a LinkedList - does it make any difference behaviorally? (ignore performance)
+- It does not make any difference behaviorally.
+2) TODO what happens if you use list.remove(Integer.valueOf(77))?
+- ConcurrentModificationException
+
+#TestList
+1) TODO also try with a LinkedList - does it make any difference behaviorally? (ignore performance)
+- It does not make any difference behaviorally.
+2) TODO answer: what does this method do?
+- Removes index 5 from the list.
+3) TODO answer: what does this one do?
+- Removes number with value of 5 from the list.
+
+#TestPerformance
+1) TODO run test and record running times for SIZE = 10, 100, 1000, 10000, ...
+- 10: 12ms
+- 100: 18ms
+- 1000: 19ms
+- 10000: 147ms
+- 100000: 10s 184ms
+2) TODO answer: which of the two lists performs better as the size increases?
+- The array-list performs better. When size and reps = 100,000, linked-list
+  takes more than double the time that array-list takes.
